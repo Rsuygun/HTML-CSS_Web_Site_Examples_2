@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    font-family: Kalam, cursive;
+}
+
+/* Navbar */
+
+#navbar{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 80px;
+}
+
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0.5rem;
+}
+
+#navbar ul li a:hover{
+    background: grey;
+    border-radius: 4px;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid black;
+}
+
+#home img{
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40%;
+}
+
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+
+#home .name p{
+    opacity: 0.9;
+}
+
+/* Branches */
+
+#branches{
+    color: black;
+    padding: 1rem;
+}
+
+#branches .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#branches .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#branches .items .item:hover{
+    color: lightgray;
+    opacity: 1.4;
+}
+
+/* Cars */
+
+#cars img{
+    width: 350px;
+    height: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.cars{
+    color: black;
+    padding: 1rem;
+}
+
+.cars{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.cars .car{
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cars .car .car-image{
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.cars .car .car-image span{
+    background: darkgray;
+    padding: 0.2rem;
+    color: black;
+    border-radius: 13px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+}
+
+.cars .car .cars-info .title{
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cars .car .cars-info .description{
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+.cars .car .cars-info .insturactor{
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+    opacity: 0.6;
+}
+
+.cars .car .cars-info .rating{
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+    opacity: 0.6;
+}
+
+/* Contact */
+
+#contact{
+    color: black;
+    padding: 1rem;
+}
+
+#contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#contact .contact-form ul li{
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#contact .contact-form ul li a:hover{
+    opacity: 0.5;
+}
+
+/* Pay */
+
+select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 2.5rem;
+    background: white;
+    align-items: center;
+    color: white;
+    font-family: Kalam cursive;
+    appearance: none;
+    outline: 0;
+    box-shadow: 0;
+    border: 0;
+    background: grey;
+    flex: 1;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.select{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: Kalam cursive;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: grey;
+    overflow: hidden;
+    border-radius: 8px;
+    
+}
+
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: lightgray;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+    
+    
+}
+
+.select:hover::after{
+    color: darkgray;
+}
